@@ -1,0 +1,112 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-size: 12px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+.container{
+  border: 2px solid  black;
+  width:825px;
+  margin:50px auto;
+  position: relative;
+}
+.price{
+  font-size: 18px;
+}
+
+.add-cart:hover{
+background-color: white;
+color:black;
+border-top:2px solid black;
+
+}
+.add-cart{
+  background-color: black;
+  color:white;
+  border:none;
+width:100%;
+height:50px;
+font-size: 25px;
+font-weight: 500;
+  cursor: pointer;
+}
+.product-details{
+  font-size: 16px;
+  font-style: normal;
+  margin:10px 0;
+}
+.main-header-of-challenge{
+  background-color: rgba(223, 222, 222, 0.485);
+  text-align: center;
+  font-size: 20px;
+  padding:10px 0;
+  text-transform: uppercase;
+}
+
+.free-shipping{
+  font-style: bolder;
+  font-size: 10px;
+  color: rgba(128, 128, 128, 0.793);
+  text-transform: uppercase;
+  margin:10px 0;
+}
+.more-info{
+  color:black;
+}
+.more-info:visited{
+  color:black;
+}
+
+.more-info:hover {
+  text-decoration: none;
+  color: gray
+}
+li{
+  list-style: square;
+  margin:0 20px;
+  padding:5px 0;
+}
+li:last-child{
+  margin-bottom: 5px;
+}
+.sale{
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: rgb(193, 8, 8);
+  font-weight: bolder;
+  padding:5px;
+  letter-spacing: 2px;
+  position: absolute;
+  top:-15px;
+  left:-35px;
+}
+.choose{
+display:inline-block;
+cursor:pointer;
+width: 20px;
+height: 20px;
+margin-right: 10px;
+margin-bottom: 20px;
+}
+.c1{
+  background-color:chocolate
+}
+.c2{
+  background-color:rgb(30, 63, 210)
+}
+.c3{
+  background-color:rgb(72, 210, 30)
+}
+.c4{
+  background-color:rgb(210, 30, 30)
+}
+.c5{
+  background-color:rgb(210, 30, 168)
+}
+.c6{
+  background-color:rgb(255, 254, 254)
+}

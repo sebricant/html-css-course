@@ -1,0 +1,157 @@
+/* Global Reset */
+* {
+  color: darkblue;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+/* list selector  */
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1,
+h3,
+h2 {
+  color: rgba(18, 51, 118, 0.902);
+  margin: 0 20px;
+}
+.h2-first{
+  position:relative;
+}
+nav {
+  margin: 0 70px;
+  padding-bottom: 20px;
+}
+p {
+  color: rgb(7, 23, 23);
+  margin: 15px 30px;
+}
+li {
+  margin: 10px 50px;
+}
+/* decendant selector */
+/* footer p {
+  font-size: 16px;
+} */
+/* p strong {
+  font-style: italic;
+} */
+/* aside li p {
+  font-style: oblique;
+} */
+/* id selector */
+#copyright {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+/* class selector*/
+.main-header {
+  background-color: #f4f4f4;
+  margin: 30px 0;
+  padding: 10px;
+}
+.related-author {
+  font-weight: bold;
+  font-style: italic;
+}
+.list-pointer {
+  list-style: none;
+}
+.releted-posts {
+  background-color: #f4f4f4;
+  border-top: 3px solid #0d7272;
+  border-bottom: 3px solid #0d7272;
+}
+.related-h3 {
+  margin: 0 70px;
+  padding: 10px;
+}
+/* pseudo classes*/
+/* li:first-child {
+  font-weight: bolder;
+} */
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+li:nth-child(2) {
+  color: chocolate;
+}
+li:nth-child(odd) {
+  color: rgb(128, 0, 96);
+}
+/* Styling Links */
+a:link {
+  color: #0d7272;
+  text-decoration: none;
+}
+a:visited {
+  color: #012e2e;
+}
+a:hover {
+  text-decoration: underline dotted orangered;
+  font-weight: bolder;
+}
+a:active {
+  background-color: yellowgreen;
+  font-style: italic;
+}
+
+/* Resolving conflicting declaration */
+.paragraph {
+  color: rgb(187, 19, 19);
+}
+#para {
+  color: rgba(12, 44, 26, 0.927);
+}
+.related-links {
+  margin-right: 0;
+}
+.post-img {
+  width: 800px;
+  height: auto;
+}
+.author-photo {
+  margin: 5px 30px;
+}
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+.like-button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+/* Pseudo Element :: */
+h1::first-letter {
+  font-size: 50px;
+  font-style: italic;
+}
+/* Adjactent Sibling Selector */
+h2 + p::first-line {
+  color: rgb(200, 207, 9);
+}
+.h2-first::after {
+content:"New";
+color:rgb(0, 0, 0);
+background-color: yellow;
+font-size: 10px;
+font-weight: 200;
+display: inline-block;
+padding: 5px;
+position: absolute;
+top:-10px;
+right:-10px;
+}
