@@ -132,8 +132,13 @@ margin-bottom: 20px;
   /* float:left;
   width: 100%;
   height:250px; */
-  display: flex;
-  gap:30px;
+  /* display: flex;
+  gap:30px; */
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  /* align-content: center; */
+  /* justify-content: center; */
 }
 /* .img{
   background-color: blueviolet;
@@ -172,9 +177,9 @@ margin-bottom: 20px;
   /* justify-content: space-between; */
 
 }
-.section2{
+/* .section2{
   flex: 1;
 }
 .img{
 flex:1;
-}
+} */

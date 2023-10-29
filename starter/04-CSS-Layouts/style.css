@@ -207,7 +207,7 @@ footer{
   display:flex;
   align-items:center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .post-header{
   display: flex;
@@ -221,13 +221,13 @@ footer{
   gap:20px;
 }
 .related-links:link{
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   font-style: italic;
   display: block;
-  margin-left: 0;
 }
-.row{
+/* Flexbox layout */
+/* .row{
   display:flex;
   align-items: start;
   gap:18px;
@@ -237,4 +237,24 @@ article{
 }
 aside{
   flex:0 0 300px;
+} */
+/* CSS GRID */
+.container{
+  display:grid;
+  grid-template-columns: 1fr 300px;
+  align-items: start;
+  row-gap: 50px;
+  column-gap: 20px
+}
+.main-header{
+grid-column: 1/-1;
+}
+article{
+
+}
+aside{
+
+}
+footer{
+  grid-column: 1/-1;
 }
