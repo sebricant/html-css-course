@@ -8,6 +8,7 @@
   background-color: #f8d8bd;
   height: 9.6rem;
   padding:0 4.8rem;
+  position: relative;
   }
   .logo{
     height:2.2rem;
@@ -66,6 +67,25 @@ font-weight: 600;
   color:#b8651b;
   font-weight: 700;
 }
+/* ******************************* */
+/* MOBILE NAV */
+/* ******************************* */
+
+.btn-mobile-nav{
+  border:none;
+  background-color:#f8d8bd;
+  display:none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav{
+  color: #333;
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.icon-mobile-nav[name="close-outline"]{
+display:none;
+}
 
 /* ******************************* */
 /* MAIN NAV */
@@ -113,7 +133,7 @@ font-weight: 600;
   width: 35%;
 }
 .step-number{
-  font-size:8rem;
+  font-size:8.6rem;
   font-weight: 600;
   color:#ddd;
   margin-bottom:1.6rem;
@@ -407,7 +427,11 @@ line-height:1.8;
 /* ******************************* */
 
 .section-cta{
-  padding:9.6rem 0;
+  /* top / right / bottom / left */
+  padding:4.8rem 0 12.8rem 0;
+  /* or we can use like this another method also if the both side values are same.*/
+  /* top / horizontal / bottom */
+  /* padding:9.6rem 0 12.8rem; */
 }
 .cta{
   display:grid;
@@ -466,3 +490,81 @@ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
   outline:none;
   box-shadow:0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
+
+/* ******************************* */
+/*FOOTER SECTION*/
+/* ******************************* */
+
+.footer{
+  padding:12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer{
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-cols{
+  display:flex;
+  flex-direction: column;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom:3.2rem;
+}
+
+.social-links{
+  list-style:none;
+  display:flex;
+  gap:2.4rem;
+}
+
+.social-icons{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyrights{
+font-size: 1.4rem;
+line-height:1.6;
+color:#767676;
+margin-top:auto;
+}
+
+.contacts{
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address{
+  color:#555;
+  margin-bottom: 2.4rem;
+}
+.footer-heading{
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+text-decoration: none;
+color: #767676;
+font-size: 1.6rem;
+transition: all 0.03s;
+}
+
+.footer-link:hover,
+.footer-link:active{
+  color:#555;
+}
+
